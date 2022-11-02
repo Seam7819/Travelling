@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+ul {
+    list-style: none;
+}
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+body ,html {
+    overflow-x: hidden;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./Images/Nature.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header .content h2 {
+    font-size: 4vmin;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background: #b900b9;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn {
+    padding: 8px 15px;
+    background: #b900b9;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+/* mobile */
+@media only screen and (max-width:850px){
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(57, 54, 95);
+        margin-top: -900px;
+        transition: all 10s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+}
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.title {
+    text-align: center;
+    font-size: 4vmin;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Events .row{
+    margin-top: 50px;
+}
+h4 {
+    font-size: 3vmin;
+    color: #b900b9;
+    margin: 20px auto;
+}
+p {
+    color: #837583;
+    padding: 0px 70px;
+}
+.row .col img {
+    height: 250px;
+    width: 400px;
+    padding-top: 30px;
+}
+.Events .ctn {
+    margin-top: 30px;
+}
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Images/Explore.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1 {
+font-size: 7vmin;
+}
+.explore-content .line {
+    margin-bottom: 50px;
+}
+.explore-content p {
+    color: white;
+
+}
+.explore-content .ctn {
+    margin-top: 40px;
+}
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+.image-gallery img {
+    width: 250px;
+    margin: 10px;
+}
+.tours .col {
+    width: 50%;
+}
+
+.tours h1 {
+    font-size: 4vmin;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.col p {
+    padding: 10px;
+    justify-content: space-around;
+}
+.tours .ctn {
+    margin-top: 20px;
+}
